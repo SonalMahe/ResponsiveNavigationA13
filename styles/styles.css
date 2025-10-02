@@ -1,0 +1,125 @@
+body{
+    margin: auto;
+    max-width: 100%;
+    box-sizing: border-box;
+    background-color: #000000;
+}
+
+/* navbar*/
+nav{
+    padding:10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+nav ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem 2rem;
+    color: white;
+    gap:20px;
+}
+ nav ul li{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 0px;
+    gap: 1.5rem;
+}
+nav ul li  a{
+    text-decoration: none;
+    color:white;
+}
+a:hover{
+    background-color: wheat;
+}
+
+.dropdown{
+   margin:30px; 
+   font-size: 30px;
+   color:white;
+}
+.dropdown{
+    display: none;
+}
+.dropdown i:hover{
+    background-color: blue;
+}
+
+
+
+/*herosection*/
+.herosec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap:2rem;
+    color: white;
+}
+.herosec .text{
+    flex:1;
+    width: 50%;
+}
+.herosec .text p{
+    font-size: 28px;
+    color: white;
+}
+
+.herosec .text h2{
+    font-size: 90px;
+}
+.herosec .image{
+    flex: 1;
+    width: 50%;
+}
+.herosec .image img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/*responsive-design(diff-ways)*/
+
+@media screen and (min-width:768px) and (max-width:1440px){
+    .herosec{
+        flex-direction: column;
+        text-align: center;
+        font-size: 64px;
+    }
+}
+@media screen and (min-width:320px) and (max-width:768px){
+    .herosec{
+        flex-direction: column;
+        text-align: center;
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width:768px) and  (max-width:1440px){
+    .nav-list{
+        flex-direction: column;
+        font-size:16px;
+    }
+}
+ @media (max-width:768px) {
+    nav ul{
+        position: absolute;
+        top:70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        gap:0;
+        background-color:rgb(91, 81, 81);
+        overflow: hidden;
+    }
+    nav ul li{
+        padding: 20px;
+    }
+    .dropdown{
+        display: block;
+      }
+    }
