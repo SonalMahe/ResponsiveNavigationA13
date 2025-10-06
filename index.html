@@ -1,57 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://kit.fontawesome.com/edb0868ad4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <title>Navigation Menu</title>
 </head>
+
 <body>
-    <header >    
+    <header>
         <nav>
             <div class="logo">
                 <img src="images/newLogo.png" alt="head-logo">
-                </div>
-              <ul id="navlist">
-                    <li><a href="#">Works</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contacts</a></li>   
-              </ul>
-               <div class="dropdown">
-                      <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
-               </div>
+            </div>
+            <ul id="navlist">
+                <li><a href="#">Works</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+            <div class="dropdown">
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            </div>
         </nav>
 
         <script>
-            let navlist= document.getElementById("navlist")
-            navlist.style.maxHeight == "0px"
+            let navlist = document.getElementById("navlist")
+            navlist.style.maxHeight == "0px";
 
-            function toggleMenu(){
-                if(navlist.style.maxWidth = "0px"){
-
-                    navlist.style.maxWidth = "768px"
+            function toggleMenu() {
+                 
+               
+                if (navlist.style.maxHeight === "0px" || navlist.style.maxHeight === "") {
+                    navlist.style.maxHeight = "768px";
                 }
-                else{
-                    navlist.style.maxWidth = "0px"
-
+                else {
+                    navlist.style.maxHeight = "0px";
                 }
 
             }
         </script>
+
     </header>
-          <main>
-               <section class="herosec">
-                   <div class="text">
-                     <h2>Recipes</h2>
-                     <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec.
-                         Donec viverra eleifend lacus, vitae ullamcor.</p>
-                   </div>
-                  <div class="image">
-                    <img src="images/Slider.jpg" alt="Man">
-                  </div>
-              </section>
-         </main>   
+    <main>
+        <section class="herosec">
+            <div class="text">
+                <h2>Recipes</h2>
+                <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec.
+                    Donec viverra eleifend lacus, vitae ullamcor.</p>
+            </div>
+            <div class="image">
+                <img src="images/Slider.jpg" alt="Man">
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
