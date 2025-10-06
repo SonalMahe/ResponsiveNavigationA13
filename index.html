@@ -20,9 +20,26 @@
                     <li><a href="#">Contacts</a></li>   
               </ul>
                <div class="dropdown">
-                      <i class="fa-solid fa-bars"></i>
+                      <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
                </div>
         </nav>
+
+        <script>
+            let navlist= document.getElementById("navlist")
+            navlist.style.maxHeight == "0px"
+
+            function toggleMenu(){
+                if(navlist.style.maxWidth = "0px"){
+
+                    navlist.style.maxWidth = "768px"
+                }
+                else{
+                    navlist.style.maxWidth = "0px"
+
+                }
+
+            }
+        </script>
     </header>
           <main>
                <section class="herosec">
